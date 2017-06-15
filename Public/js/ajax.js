@@ -1,0 +1,1 @@
+if(!String.prototype.format)throw "EXTENSION REQUIRED"

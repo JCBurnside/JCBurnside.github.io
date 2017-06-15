@@ -1,0 +1,17 @@
+#navBar ul li::before {
+	content: "<b>|</b> "
+	padding-right:.7em;
+	color:red;
+}
+#navBar,#mobileNavBar{
+	background-color: blue;
+}
+#navBar ul{
+	display: inline-block;
+	margin-left: 20px;
+	list-style-type: none;
+}
+#navBar li{
+	display: inline-block;
+	margin-right: 30px
+}
