@@ -1,3 +1,19 @@
+header{
+	padding-top: 5%;
+}
+header img{
+	width: 50%;
+	max-width:300px;
+}
+.tile{
+	border-radius: 2em;
+	float: left;
+	position: relative;
+	margin:0 0 2em;
+	padding: 1.5em 0 2em .5em;
+	display: inline-block;
+	box-shadow: 1px 1px 5px #777;
+}
 #navBar ul li::before {
 	content: "<b>|</b> "
 	padding-right:.7em;
@@ -6,6 +22,7 @@
 #navBar,#mobileNavBar{
 	background-color: blue;
 }
+
 #navBar ul{
 	display: inline-block;
 	margin-left: 20px;
