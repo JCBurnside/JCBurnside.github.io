@@ -1,12 +1,5 @@
 {
 	"projects":[
-		/*project templete
-		{
-			"name":"",
-			"github":"",
-			"link":"",
-			"desc":""
-		},*/
 		{
 			"name":"Api Challange",
 			"github":"https://github.com/JCBurnside/api-challenge",
@@ -34,6 +27,6 @@
 			"link":"",
 			"desc":"",
 			"tags":[]
-		},
-	],
+		}
+	]
 }

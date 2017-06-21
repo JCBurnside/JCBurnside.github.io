@@ -33,6 +33,8 @@ $(()=>{
 		url:"https://jcburnside.github.io/private/projects.json"
 	}).done((res)=>{
 		console.log(res)
+	}).fail((res)=>{
+		console.log("FAILED",res.responseText)
 	})
 
 	// isVisable=function($Obj){
