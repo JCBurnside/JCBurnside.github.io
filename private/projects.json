@@ -10,8 +10,30 @@
 		{
 			"name":"Api Challange",
 			"github":"https://github.com/JCBurnside/api-challenge",
+			"link":"https://api-callenge-jcb.herokuapp.com/",
+			"desc":"A Challange as presented by Elevenfifty Academy to use an open api with a key.  I choose a music api and made it so you can enter an artist to get a list of songs or enter a song ",
+			"tags":[]
+		},
+		{
+			"name":"",
+			"github":"https://github.com/JCBurnside/",
 			"link":"",
-			"desc":""
-		}
+			"desc":"",
+			"tags":[]
+		},
+		{
+			"name":"",
+			"github":"https://github.com/JCBurnside/",
+			"link":"",
+			"desc":"",
+			"tags":[]
+		},
+		{
+			"name":"",
+			"github":"https://github.com/JCBurnside/",
+			"link":"",
+			"desc":"",
+			"tags":[]
+		},
 	],
 }

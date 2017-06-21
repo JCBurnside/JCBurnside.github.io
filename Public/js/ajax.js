@@ -1,16 +1,16 @@
 if(!String.prototype.format)throw "EXTENSION REQUIRED"
 var isVisable;
-const TILE_FORMAT="<div class=\"tile\" id=\"%s\">\
-					<div class=\"row\">\
+const TILE_FORMAT="<div class=\"tile col-xs-12 col-md-3\" id=\"%s\">\
+					<div class=\"col-xs-12\">\
 						<img src=\"%s\" />\
 					</div>\
-					<div class=\"row\">\
+					<div class=\"col-xs-12\">\
 						<h3>%s</h3>\
 					</div>\
-					<div class=\"row\">\
+					<div class=\"col-xs-12\">\
 						<p>%s</p>\
 					</div>\
-					<div class=\"row\">\
+					<div class=\"col-xs-12\">\
 						<ul class=\"tags\">\
 							%s\
 						</ul>\
@@ -30,11 +30,9 @@ $(()=>{
 	//   })
 	$.ajax({
 		type:"GET",
-		url:"https://api.github.com/users/jcburnside/repos"
+		url:"https://jcburnside.github.io/private/projects.json"
 	}).done((res)=>{
-		res.forEach((element)=>{
-			console.log(element.url)
-		})
+		console.log(res)
 	})
 
 	// isVisable=function($Obj){
