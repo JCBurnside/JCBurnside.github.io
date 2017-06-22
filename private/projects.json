@@ -4,35 +4,40 @@
 			"name":"Api Challange",
 			"github":"https://github.com/JCBurnside/api-challenge",
 			"link":"https://api-callenge-jcb.herokuapp.com/",
-			"desc":"A Challange as presented by Elevenfifty Academy to use an open api with a key.  I choose a music api and made it so you can enter an artist to get a list of songs or enter a song ",
-			"tags":[]
-		},
-		{
-			"name":"Shopping List",
-			"github":"https://github.com/JCBurnside/",
-			"link":"",
-			"desc":"",
+			"desc":"A Challange as presented by Elevenfifty Academy to use an open api with a key.  I choose a music api and made it so you can enter an artist to get a list of songs or enter a song and artist to get the lyrics",
 			"tags":[]
 		},
 		{
 			"name":"Store Project",
-			"github":"https://github.com/JCBurnside/",
-			"link":"",
-			"desc":"",
+			"github":"https://github.com/JCBurnside/StoreProject",
+			"link":"https://store-project-jcb.herokuapp.com/",
+			"desc":"VERY EARLY WORK IN PROGRESS.  Basic wireframe of a website where you can order and/or comission robots.  Not much else to it at the moment.",
 			"tags":[]
 		},
 		{
-			"name":"Friends List",
-			"github":"https://github.com/JCBurnside/",
-			"link":"",
-			"desc":"",
+			"name":"Shopping List",
+			"github":"https://github.com/JCBurnside/shoppingList",
+			"link":"https://shopping-list-jcb.herokuapp.com/",
+			"desc":"A basic agile application that stores a list locally with two views.  Uses the MVC model",
 			"tags":[]
 		},
 		{
 			"name":"Javascript Library",
-			"github":"https://github.com/JCBurnside/",
-			"link":"",
-			"desc":"",
+			"github":"https://github.com/JCBurnside/jsFund",
+			"link":"https://github.com/JCBurnside/jsFund",
+			"desc":"A repo of all my work durning the Javascript cohort of Elevenfifty Academy.  Personal favorite is the extension.js which I use in almost my projects and provides just some useful features.",
+			"tags":[]
+		},
+		{
+			"name":"Github",
+			"link":"https://github.com/JCBurnside",
+			"desc":"My personal github page with my projects.",
+			"tags":[]
+		},
+		{
+			"name":"Java Chat Moderator Bot",
+			"link":"https://github.com/JCBurnside/ChatBot",
+			"desc":"A personal project that will moderate any IRC server.  You can create custom commands via Javascript.  My intended target is streamers with specific features (such as song-requests) tailored to their needs.",
 			"tags":[]
 		}
 	]

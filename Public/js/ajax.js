@@ -23,11 +23,24 @@ $(()=>{
 		url:"https://jcburnside.github.io/private/projects.json"
 	}).done((res)=>{
 		var $featProjects=$('#featProjects');
-		res.projects.forEach((element)=>{
-			let tags=""
-			element.tags.forEach((e)=>tags+="<li>"+e+"</li>")
-			$featProjects.append(TILE_FORMAT.format(element.name,null,element.name,element.desc,tags))
+		res.projects.forEach((element,i)=>{
+			let tags="";
+			console.log(i)
+			element.tags.forEach((e)=>tags+="<li>"+e+"</li>");
+			if((i)%3==0)$featProjects.append("<div class='col-md-1 hidden-xs hidden-sm'></div>");
+			console.log((i+1)%3==0)
+			$featProjects.append(TILE_FORMAT.format(element.name.replace(" ","_"),null,element.name,element.desc,tags))
 		})
+		var $tiles=$('.tile'),
+			maxHeight=0;
+
+		for(let ctr=0;ctr<$tiles.length;ctr++){
+			maxHeight=Math.max($($tiles[ctr]).height(),maxHeight);
+
+		}
+		for(let ctr=0;ctr<$tiles.length;ctr++){
+			$($tiles[ctr]).height(maxHeight);
+		}
 	}).fail((res)=>{
 		console.log("FAILED",res)
 	})
