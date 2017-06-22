@@ -8,25 +8,32 @@
 			"tags":[]
 		},
 		{
-			"name":"",
+			"name":"Shopping List",
 			"github":"https://github.com/JCBurnside/",
 			"link":"",
 			"desc":"",
 			"tags":[]
 		},
 		{
-			"name":"",
+			"name":"Store Project",
 			"github":"https://github.com/JCBurnside/",
 			"link":"",
 			"desc":"",
 			"tags":[]
 		},
 		{
-			"name":"",
+			"name":"Friends List",
+			"github":"https://github.com/JCBurnside/",
+			"link":"",
+			"desc":"",
+			"tags":[]
+		},
+		{
+			"name":"Javascript Library",
 			"github":"https://github.com/JCBurnside/",
 			"link":"",
 			"desc":"",
 			"tags":[]
 		}
-	]
+	],
 }

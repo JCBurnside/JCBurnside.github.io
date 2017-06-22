@@ -18,41 +18,36 @@ const TILE_FORMAT="<div class=\"tile col-xs-12 col-md-3\" id=\"%s\">\
 				</div>"//vars in order:id,imgSrc,name,desc,tags
 $(()=>{
 	console.log("LOADING AJAX.JS")
-	// $.ajax({
-	// 	type:"GET",
-	// 	url:'/projects'
-	// })
-	//   .done((res)=>{
-	//   	console.log(res);
-	//   })
-	//   .fail((res)=>{
-	//   	console.log(res);
-	//   })
 	$.ajax({
 		type:"GET",
 		url:"https://jcburnside.github.io/private/projects.json"
 	}).done((res)=>{
-		console.log(res)
+		var $featProjects=$('#featProjects');
+		res.projects.forEach((element)=>{
+			let tags=""
+			element.tags.forEach((e)=>tags+="<li>"+e+"</li>")
+			$featProjects.append(TILE_FORMAT.format(element.name,null,element.name,element.desc,tags))
+		})
 	}).fail((res)=>{
-		console.log("FAILED",res.responseText)
+		console.log("FAILED",res)
 	})
 
-	// isVisable=function($Obj){
-	// 	let w=$(window),
-	// 	scrollT=w.scrollTop(),
-	// 	scrollL=w.scrollLeft(),
-	// 	offset=$Obj.offset(),
-	// 	x=offset.left,
-	// 	y=offset.top,
-	// 	objH=$Obj.height(),
-	// 	objW=$Obj.width(),
-	// 	winH=w.height(),
-	// 	winW=w.width();
-	// 	console.log("%s>=%s,%s<=%s,%s>=%s,%s<=%s",y+objH,scrollT,y,scrollT+winH,x+objW,scrollL,x,objW+scrollL)
-	// 	return y+objH>=scrollT &&
-	// 			y<=scrollT+winH &&
-	// 			x+objW>=scrollL&&
-	// 			x<=objW+scrollL&&
-	// 			$Obj.css("display")!="none";
-	// }
+	/*isVisable=function($Obj){
+		let w=$(window),
+		scrollT=w.scrollTop(),
+		scrollL=w.scrollLeft(),
+		offset=$Obj.offset(),
+		x=offset.left,
+		y=offset.top,
+		objH=$Obj.height(),
+		objW=$Obj.width(),
+		winH=w.height(),
+		winW=w.width();
+		console.log("%s>=%s,%s<=%s,%s>=%s,%s<=%s",y+objH,scrollT,y,scrollT+winH,x+objW,scrollL,x,objW+scrollL)
+		return y+objH>=scrollT &&
+				y<=scrollT+winH &&
+				x+objW>=scrollL&&
+				x<=objW+scrollL&&
+				$Obj.css("display")!="none";
+	}*/
 });

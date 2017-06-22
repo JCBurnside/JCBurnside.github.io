@@ -1,3 +1,6 @@
+body{
+	overflow-x: hidden;
+}
 header{
 	padding-top: 5%;
 }
@@ -9,10 +12,11 @@ header img{
 	border-radius: 2em;
 	float: left;
 	position: relative;
-	margin:0 0 2em;
+	margin:20px;
 	padding: 1.5em 0 2em .5em;
 	display: inline-block;
 	box-shadow: 1px 1px 5px #777;
+	background-color: white;
 }
 #navBar ul li::before {
 	content: "<b>|</b> "
