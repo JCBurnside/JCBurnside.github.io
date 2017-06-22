@@ -1,12 +1,33 @@
 body{
 	overflow-x: hidden;
+
 }
+section{
+
+	padding-top: 5px;
+}
+body *-(#navBar *,#mobileNavBar *){
+	margin:30px 0 30px 0;
+}
+body > *:nth-child(3n){background-color: #312ac4;color:white;}
+body > *:nth-child(3n+1){background-color: #7f2ac4;color:white;}
+body > *:nth-child(3n+2){background-color:#2ab7c4;color:white;}
 header{
 	padding-top: 5%;
+	width:100%;
 }
 header img{
 	width: 50%;
 	max-width:300px;
+}
+footer{
+	padding-bottom: 10px;
+}
+.nav-fixed{
+	top:0;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
 }
 .tile{
 	border-radius: 2em;
@@ -18,15 +39,6 @@ header img{
 	box-shadow: 1px 1px 5px #777;
 	background-color: white;
 }
-#navBar ul li::before {
-	content: "<b>|</b> "
-	padding-right:.7em;
-	color:red;
-}
-#navBar,#mobileNavBar{
-	background-color: blue;
-}
-
 #navBar ul{
 	display: inline-block;
 	margin-left: 20px;
@@ -34,5 +46,18 @@ header img{
 }
 #navBar li{
 	display: inline-block;
-	margin-right: 30px
+	margin-right: 30px;
+	color:black;
+}
+#navBar a{
+	color:white;
+	text-decoration: none;
+}
+#contactMe{
+	color:black;
+	padding-bottom: 5px;
+}
+#contactMe *{
+	margin-top: 10px;
+	max-width: 90%;
 }

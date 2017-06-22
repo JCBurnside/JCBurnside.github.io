@@ -1,9 +1,7 @@
 if(!String.prototype.format)throw "EXTENSION REQUIRED"
 var isVisable;
 const TILE_FORMAT="<div class=\"tile col-xs-12 col-md-3\" id=\"%s\">\
-					<div class=\"col-xs-12\">\
-						<img src=\"%s\" />\
-					</div>\
+					<a href=\"%s\">\
 					<div class=\"col-xs-12\">\
 						<h3>%s</h3>\
 					</div>\
@@ -15,9 +13,19 @@ const TILE_FORMAT="<div class=\"tile col-xs-12 col-md-3\" id=\"%s\">\
 							%s\
 						</ul>\
 					</div>\
+					</a>\
 				</div>"//vars in order:id,imgSrc,name,desc,tags
 $(()=>{
 	console.log("LOADING AJAX.JS")
+	$(window).scroll(function(){
+		let $navBar=$('#navBar'),
+			$mobileBar=$('#mobileNavBar');
+		if($navBar.css('display')!="none"&&$(this).scrollTop()>=$("header").height())$navBar.addClass('nav-fixed')
+		else $navBar.removeClass('nav-fixed');
+		if($mobileBar.css('display')!="none"&&$(this).scrollTop()>=$("header").height())$mobileBar.addClass('mobile-fixed')
+		else $mobileBar.removeClass('nav-fixed');
+		console.log($(this).scrollTop()>=$("header").height())
+	})
 	$.ajax({
 		type:"GET",
 		url:"https://jcburnside.github.io/private/projects.json"
@@ -28,8 +36,9 @@ $(()=>{
 			console.log(i)
 			element.tags.forEach((e)=>tags+="<li>"+e+"</li>");
 			if((i)%3==0)$featProjects.append("<div class='col-md-1 hidden-xs hidden-sm'></div>");
-			console.log((i+1)%3==0)
-			$featProjects.append(TILE_FORMAT.format(element.name.replace(" ","_"),null,element.name,element.desc,tags))
+			// <div class='col-md-1 hidden-xs hidden-sm'></div>
+			console.log(i%3==0&&i!=0);
+			$featProjects.append(TILE_FORMAT.format(element.name.replace(" ","_"),element.link||element.github,element.name,element.desc,tags))
 		})
 		var $tiles=$('.tile'),
 			maxHeight=0;
