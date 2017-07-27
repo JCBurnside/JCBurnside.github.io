@@ -39,6 +39,18 @@
 			"link":"https://github.com/JCBurnside/ChatBot",
 			"desc":"A personal project that will moderate any IRC server.  You can create custom commands via Javascript.  My intended target is streamers with specific features (such as song-requests) tailored to their needs.",
 			"tags":[]
+		},
+		{
+			"name":"MERN Bucket List",
+			"link":"https://jcb-bucketlist.herokuapp.com/",
+			"desc":"A simmple react based website where you can store some tasks",
+			"tags":[]
+		},
+		{
+			"name":"MEAN stack project",
+			"link":"https://jcb-twitch-client.herokuapp.com/",
+			"desc":"A community page for my twitch liveStream",
+			"tags":[]
 		}
 	]
 }
