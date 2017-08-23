@@ -8,13 +8,6 @@
 			"tags":[]
 		},
 		{
-			"name":"Store Project",
-			"github":"https://github.com/JCBurnside/StoreProject",
-			"link":"https://store-project-jcb.herokuapp.com/",
-			"desc":"VERY EARLY WORK IN PROGRESS.  Basic wireframe of a website where you can order and/or comission robots.  Not much else to it at the moment.",
-			"tags":[]
-		},
-		{
 			"name":"Shopping List",
 			"github":"https://github.com/JCBurnside/shoppingList",
 			"link":"https://shopping-list-jcb.herokuapp.com/",
